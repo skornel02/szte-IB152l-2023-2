@@ -1,0 +1,2 @@
+# Adatbázis alapú rendszerek beadandó
+
