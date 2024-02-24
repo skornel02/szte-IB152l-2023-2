@@ -1,0 +1,10 @@
+{
+	"name": "szte-IB152l-2023-2-beadando",
+	"scripts": {
+		"install": "md-to-pdf --config-file ./readme.config.js ../readme.md",
+		"start": "md-to-pdf --config-file ./readme.config.js --watch ../readme.md"
+	},
+	"dependencies": {
+		"md-to-pdf": "^5.2.4"
+	}
+}

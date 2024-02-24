@@ -1,0 +1,160 @@
+<mxfile host="65bd71144e">
+    <diagram id="PrnZgCYHGE63sYOPcBc7" name="Page-1">
+        <mxGraphModel dx="501" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="32" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="2" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="User" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="40" width="210" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;exitX=0.101;exitY=1.013;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="151" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="Post" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="230" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.334;exitY=1.115;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="200" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=none;html=1;dashed=1;endArrow=ERmany;endFill=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;startArrow=none;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="4" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="335" y="310"/>
+                            <mxPoint x="150" y="310"/>
+                            <mxPoint x="150" y="350"/>
+                        </Array>
+                        <mxPoint x="330" y="310" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="Poetry" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="230" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.433;exitY=1.028;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="80" as="sourcePoint"/>
+                        <mxPoint x="310" y="350" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="220" y="360"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;dashed=1;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;dashed=1;endArrow=ERmany;endFill=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="85" y="320"/>
+                            <mxPoint x="290" y="320"/>
+                            <mxPoint x="290" y="350"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Comment" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="340" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;exitX=0.211;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="260" y="80" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="174" y="360"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;dashed=1;" edge="1" parent="1" source="3" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Engagement" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="340" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="7" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Following" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="40" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="WatchList" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="170" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;exitX=0.856;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="9">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="310" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="EmailQueue" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="110" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;exitX=0.711;exitY=1.028;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="343.20000000000005" y="89.75999999999999" as="sourcePoint"/>
+                        <mxPoint x="480" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;endArrow=ERmany;endFill=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.575;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="80" as="sourcePoint"/>
+                        <mxPoint x="434" y="200" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="250" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="User-Post" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="105" y="97" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="User-Engagement" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="115" y="115" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="User-Poetry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="102" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="User-Comment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="165" y="109" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="StalkerUser-WatchList" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="212" y="124" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="StalkedUser-WatchList" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="182" y="125" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Recipient-Email" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=-90;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="258" y="109" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="Follower-Following" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="348" y="26" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="Followed-Following" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+                    <mxGeometry x="348" y="65" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="Engagement-Post" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="19" y="290" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="Comment-Poetry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;fontSize=6;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="287" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="Post-Comment" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=6;rotation=-90;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="290" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="Engagement-Poetry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=6;rotation=270;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="291" width="80" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
