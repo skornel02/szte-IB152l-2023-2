@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<PublishSingleFile>true</PublishSingleFile>
+	<SelfContained>true</SelfContained>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +16,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Oracle.EntityFrameworkCore" Version="8.21.121" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Content Remove="appsettings.Development.json" />
   </ItemGroup>
 
 </Project>
