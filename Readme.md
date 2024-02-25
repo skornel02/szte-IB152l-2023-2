@@ -476,3 +476,14 @@ state "Men3" as watchuser
 ![Munkafelosztás 3-4. mérföldkő](./Diagrams/workitems-34.png)
 
 </div>
+
+## Adatbázis felállítás
+
+### Adatbázis előkészítése
+
+Csatlakozzunk az általunk használni kívánt Oracle DB-hez és hozzunk létre egy technical usert!
+
+Az alap érték a következő fájltban található: `./Backend/Persistance/Scripts/CreateTechicalUserSql.sql`.
+
+Ezután állítsuk be a megfelelő elérési útvonalat és felhasználó azonosítókat a programnak: `./Backend/appsettings.json`
+
