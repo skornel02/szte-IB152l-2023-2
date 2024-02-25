@@ -1,4 +1,8 @@
-# <div class="header-page">A Legbiztonágosabb Közösségi Oldal - Adatbázis alapú rendszerek beadandó  </div>
+<div class="pattern-dots-lg" style="color: #d3d3d3;">
+
+# <div class="header-page" style="color: black;">A Legbiztonágosabb Közösségi Oldal <br> <small>Adatbázis alapú rendszerek beadandó</small>  </div>
+
+</div>
 
 <div class="page-break"></div>
 
@@ -177,11 +181,23 @@ Engagement(<u>EngagementId</u>, *CreatorUserEmailAddress*, CreationDate, Engaged
 
 Az EK elemzések során megállapítottuk, hogy az azonosítók mentén azonos táblastruktúrára jutunk a két módszerrel. Ez nem feltétlen jelenti az optimális megoldást, de biztosak lehetünk abban, hogy az adatbázisunk 3NF-ben van.
 
-<div class="page-break"></div>
-
-## Egyed Model
+## Egyed Modell
 
 ![Entity Model Diagram](./Diagrams/em.svg)
+
+<div class="page-break"></div>
+
+## Fizikai adatfolyam
+
+![Physical Data Flow](./Diagrams/adatfolyam-fizikai.svg)
+
+<div class="page-break"></div>
+
+## Logikai adatfolyam
+
+![Logical Data Flow](./Diagrams/adatfolyam-logikai.svg)
+
+<div class="page-break"></div>
 
 ## Szerep-funkció mátrix
 
@@ -189,6 +205,60 @@ Az EK elemzések során megállapítottuk, hogy az azonosítók mentén azonos t
 
 ## Egyed-esemény mátrix
 ![Entity-Event Matrix](./Diagrams/matrix-esemeny.svg)
+
+<div class="page-break"></div>
+
+## Funkció meghatározás
+
+![Function definition](./Diagrams/funkcio-1121.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-3.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-41.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-51.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-52.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-6.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-71.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-8.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-9.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-10.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-11.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-121.svg)
+
+<div class="page-break"></div>
+
+![Function definition](./Diagrams/funkcio-123.svg)
 
 <div class="page-break"></div>
 
@@ -268,6 +338,8 @@ state "Men12" as follow
 #avh --> watchuser
 
 ```
+
+<div class="page-break"></div>
 
 ### ÁVH Felhasználó
 
@@ -349,19 +421,32 @@ state "Men3" as watchuser
 
 ```
 
-
 <div class="page-break"></div>
 
 ## Munkafelosztás
 
 ### 1. mérföldkő
 
+<div style="width: 400px;">
+
 ![Munkafelosztás 1. mérföldkő](./Diagrams/workitems-1.png)
+
+</div>
 
 ### 2. mérföldkő
 
+<div style="width: 400px;">
+
 ![Munkafelosztás 2. mérföldkő](./Diagrams/workitems-2.png)
+
+</div>
+
+<div class="page-break"></div>
 
 ### 3-4. mérföldkő
 
+<div style="width: 400px;">
+
 ![Munkafelosztás 3-4. mérföldkő](./Diagrams/workitems-34.png)
+
+</div>

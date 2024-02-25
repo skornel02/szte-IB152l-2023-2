@@ -11,7 +11,7 @@ const renderer = {
 module.exports = {
     marked_extensions: [{ renderer }],
     dest: './Documentation.pdf',
-    stylesheet: ['./readme.css'],
+    stylesheet: ['./readme.css', '../Backend/wwwroot/css/pattern.min.css'],
     body_class: 'markdown-body',
     basedir: './..',
     pdf_options: {
