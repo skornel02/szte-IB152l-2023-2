@@ -71,9 +71,13 @@ A Legbiztonságosabb Közösségi Oldal (röviden ALKO, formerly known as Twitte
 
 ![Profil](./Screens/profile.png)
 
+<div class="page-break"></div>
+
 # Idővonal
 
 ![Idővonal](./Screens/feed.png)
+
+<div class="page-break"></div>
 
 ## EK diagram
 
