@@ -17,9 +17,9 @@ module.exports = {
     pdf_options: {
         format: 'A4',
         margin: {
-            top: '30mm',
-            right: '20mm',
+            top: '20mm',
             bottom: '20mm',
+            right: '30mm',
             left: '30mm'
         },
         headerTemplate: `
