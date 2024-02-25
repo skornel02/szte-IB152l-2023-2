@@ -1,4 +1,4 @@
-<div class="pattern-dots-lg" style="color: #d3d3d3;">
+<div class="first-page pattern-dots-lg" style="color: #d3d3d3;">
 
 # <div class="header-page" style="color: black;">A Legbiztonágosabb Közösségi Oldal <br> <small>Adatbázis alapú rendszerek beadandó</small>  </div>
 
@@ -52,6 +52,28 @@ A Legbiztonságosabb Közösségi Oldal (röviden ALKO, formerly known as Twitte
 - Biznisz megoldások magas profilú ügyfeleink számára (pl: állambiztonság).
 
 <div class="page-break"></div>
+
+## Képernyő tervek
+
+# Bejelentkezés
+
+![Bejelentkezés](./Screens/login.png)
+
+# Regisztráció
+
+![Regisztráció](./Screens/register.png)
+
+# Főoldal
+
+![Főoldal](./Screens/home.png)
+
+# Profil
+
+![Profil](./Screens/profile.png)
+
+# Idővonal
+
+![Idővonal](./Screens/feed.png)
 
 ## EK diagram
 

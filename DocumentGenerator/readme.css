@@ -9,9 +9,20 @@
 }
 
 .header-page {
-  margin-top: 400px;
-  padding-top: 10px;
   text-align: center;
+}
+
+.first-page {
+  display: flex;
+  height: 297mm;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@page:first { 
+  margin: 0; 
+  padding: 0;
 }
 
 /*light*/
