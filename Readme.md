@@ -83,6 +83,11 @@ A Legbiztonságosabb Közösségi Oldal (röviden ALKO, formerly known as Twitte
 
 ![Entity-Relationship Diagram](./Diagrams/ek.svg)
 
+
+## Egyed Modell
+
+![Entity Model Diagram](./Diagrams/em.svg)
+
 ## EK Diagram értelmezés
 
 > Fentről lefele megközelítés
@@ -207,9 +212,9 @@ Engagement(<u>EngagementId</u>, *CreatorUserEmailAddress*, CreationDate, Engaged
 
 Az EK elemzések során megállapítottuk, hogy az azonosítók mentén azonos táblastruktúrára jutunk a két módszerrel. Ez nem feltétlen jelenti az optimális megoldást, de biztosak lehetünk abban, hogy az adatbázisunk 3NF-ben van.
 
-## Egyed Modell
+## Táblák
 
-![Entity Model Diagram](./Diagrams/em.svg)
+![Táblák](./Diagrams/tables.png)
 
 <div class="page-break"></div>
 
@@ -486,4 +491,3 @@ Csatlakozzunk az általunk használni kívánt Oracle DB-hez és hozzunk létre 
 Az alap érték a következő fájltban található: `./Backend/Persistance/Scripts/CreateTechicalUserSql.sql`.
 
 Ezután állítsuk be a megfelelő elérési útvonalat és felhasználó azonosítókat a programnak: `./Backend/appsettings.json`
-

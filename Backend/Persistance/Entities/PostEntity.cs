@@ -1,10 +1,14 @@
-﻿namespace Backend.Persistance.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Backend.Persistance.Entities;
 
 public class PostEntity
 {
     public int Id { get; set; }
+    [StringLength(1000)]
     public string Content { get; set; } = default!;
     public DateTime CreationDate { get; set; }
+    [StringLength(100)]
     public string? Location { get; set; } = default!;
 
     public string CreatorUserEmailAddress { get; set; } = default!;

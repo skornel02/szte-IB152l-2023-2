@@ -1,14 +1,22 @@
-﻿namespace Backend.Persistance.Entities;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Backend.Persistance.Entities;
 
 public class UserEntity
 {
+    [StringLength(255)]
     public string EmailAddress { get; set; } = default!;
 
+    [StringLength(50)]
     public string FirstName { get; set; } = default!;
+    [StringLength(50)]
     public string MiddleName { get; set; } = default!;
+    [StringLength(50)]
     public string LastName { get; set; } = default!;
 
+    [StringLength(100)]
     public string PasswordHash { get; set; } = default!;
+    [StringLength(21)]
     public string Pronouns { get; set; } = default!;
 
     public bool UserWatcher { get; set; } 

@@ -1,10 +1,12 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Backend.Persistance.Entities;
 
 public class CommentEntity
 {
     public int Id { get; set; }
+    [StringLength(1000)]
     public string Content { get; set; } = default!;
     public DateTime CreationDate { get; set; }
 

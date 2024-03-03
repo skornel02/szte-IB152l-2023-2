@@ -5,7 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddRazorPages();
 
-builder.Services.AddDbContext<ApplicationDbContext>(_ => _.UseOracle(builder.Configuration.GetConnectionString("Oracle")));
+builder.Services.AddDbContext<ApplicationDbContext>(_ => _
+    .UseOracle(builder.Configuration.GetConnectionString("Oracle"))
+    .EnableSensitiveDataLogging()
+    .EnableDetailedErrors());
 
 var app = builder.Build();
 
@@ -27,8 +30,8 @@ app.MapRazorPages();
 
 using (var scope = app.Services.CreateScope())
 {
-    using var context = scope.ServiceProvider.GetService<ApplicationDbContext>();
-    context?.Database.Migrate();
+    using var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await context.Database.MigrateAsync();
 }
 
 app.Run();
