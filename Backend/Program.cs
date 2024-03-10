@@ -1,3 +1,5 @@
+using Backend.BackgroundServices;
+using Backend.Options;
 using Backend.Persistance;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +11,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(_ => _
     .UseOracle(builder.Configuration.GetConnectionString("Oracle"))
     .EnableSensitiveDataLogging()
     .EnableDetailedErrors());
+
+builder.Services.AddOptions()
+    .Configure<EmailOptions>(builder.Configuration.GetSection(EmailOptions.SectionName));
+
+builder.Services.AddHostedService<EmailBackgroundService>();
 
 var app = builder.Build();
 
