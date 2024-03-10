@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="hSXJ-pq1rnZpo8cFar75" name="Fizikai">
-        <mxGraphModel dx="2256" dy="1558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="470" dy="325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -833,11 +833,23 @@
                         <mxPoint x="1433" y="1883" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="84" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="0DSzq6bREjHEllc4HVb2-47" target="0DSzq6bREjHEllc4HVb2-12">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="755" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="Sikeres-e" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="84">
+                    <mxGeometry x="0.6867" y="2" relative="1" as="geometry">
+                        <mxPoint x="12" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
     <diagram name="Logikai" id="YrPiqhBD8wLzDkr8S7qM">
-        <mxGraphModel dx="1128" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="480" dy="331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="VZXW9NykZ7LpQCiACDGT-0"/>
                 <mxCell id="VZXW9NykZ7LpQCiACDGT-1" parent="VZXW9NykZ7LpQCiACDGT-0"/>
@@ -1669,6 +1681,18 @@
                 </mxCell>
                 <mxCell id="LWPMkUnPs4iRh9aRjyvO-7" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="VZXW9NykZ7LpQCiACDGT-1" vertex="1">
                     <mxGeometry x="537.5699999999999" y="1063.75" width="22.43" height="26.25" as="geometry"/>
+                </mxCell>
+                <mxCell id="MJ9Ant1t0pkZL8pC3_0O-0" style="edgeStyle=none;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="VZXW9NykZ7LpQCiACDGT-1" source="VZXW9NykZ7LpQCiACDGT-75" target="VZXW9NykZ7LpQCiACDGT-7">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="755" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MJ9Ant1t0pkZL8pC3_0O-1" value="Sikeres-e" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MJ9Ant1t0pkZL8pC3_0O-0">
+                    <mxGeometry x="0.6839" relative="1" as="geometry">
+                        <mxPoint x="11" as="offset"/>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
