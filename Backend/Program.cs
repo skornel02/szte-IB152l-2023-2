@@ -1,4 +1,7 @@
 using Backend.Persistance;
+using Backend.Persistance.Entities;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +12,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(_ => _
     .UseOracle(builder.Configuration.GetConnectionString("Oracle"))
     .EnableSensitiveDataLogging()
     .EnableDetailedErrors());
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(_ =>
+    {
+        _.LoginPath = "/Login";
+        _.LogoutPath = "/Logout";
+    });
+builder.Services.AddAuthorization();
+
+builder.Services.AddScoped<PasswordHasher<UserEntity>>();
 
 var app = builder.Build();
 
@@ -24,6 +37,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
