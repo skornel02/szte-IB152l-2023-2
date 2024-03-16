@@ -1,12 +1,11 @@
 
--- User tábla feltöltése
-INSERT INTO "Users" VALUES ('example@email.com', 'Béla', 'Kálmán', 'Kiss', '$2y$10$bSonmqhCUz.Zd7Fm9cekOu8hnWo7a1V3szeamB/rOc2ubn.u4r/oO', 'He/Him', 0);
-INSERT INTO "Users" VALUES ('ferencjozsi@gmail.com', 'József', 'XVI.', 'Ferenc', '$2y$10$POJ9CeANbtMseisNrypIMeVsTte1RqpkWItoPlpQIF5SiQHAhhSyC', 'OM/M', 0);
-INSERT INTO "Users" VALUES ('krumpli@gmail.com', 'Krump', 'L.', 'Lee', '$2y$10$kdC2L6E0mzn7pk4p3CTY1O9H2mdyJJINrOL3ZQo0D3DmoZ6dmVKo2', 'She/Her', 0);
-INSERT INTO "Users" VALUES ('spambot@bots.com', 'Duleep', 'Rishit', 'Ladesh', '$2y$10$.SrL6sv86CA3FKg207LqgeZNpmEwGtyfwRpySddjYAYejb90Y4Ehu', 'BOT/IT', 0);
-INSERT INTO "Users" VALUES ('twitter@twitter.com', 'Twitter', 'Formerly Known', 'As X', '$2y$10$5.8viw0bzrzI6gU9kIyX5.9FDGjoNmAW/TyEHg9ORJOQIZ0NRnH1a', 'He/Him', 1);
-INSERT INTO "Users" VALUES ('contact@avh.com', 'Béla', 'K.', 'Kun', '$2y$10$dK6FlY1gx3qpw5D5yZs2..XVnX51Gh.M54r3LvnXDxA5Ij5p2bYmm', 'AV/H', 1);
-
+-- User tábla feltöltése (pass: asdasd)
+INSERT INTO "Users" VALUES ('example@email.com', 'Béla', 'Kálmán', 'Kiss', 'AQAAAAIAAYagAAAAEHzpJ4rfTf4UvPnqo6XV+V+c2IzsfV3djGgTNOqSWaafzmAFdISh0SVzpn+9TIX2pw==', 'He/Him', 0);
+INSERT INTO "Users" VALUES ('ferencjozsi@gmail.com', 'József', 'XVI.', 'Ferenc', 'AQAAAAIAAYagAAAAEHzpJ4rfTf4UvPnqo6XV+V+c2IzsfV3djGgTNOqSWaafzmAFdISh0SVzpn+9TIX2pw==', 'OM/M', 0);
+INSERT INTO "Users" VALUES ('krumpli@gmail.com', 'Krump', 'L.', 'Lee', 'AQAAAAIAAYagAAAAEHzpJ4rfTf4UvPnqo6XV+V+c2IzsfV3djGgTNOqSWaafzmAFdISh0SVzpn+9TIX2pw==', 'She/Her', 0);
+INSERT INTO "Users" VALUES ('spambot@bots.com', 'Duleep', 'Rishit', 'Ladesh', 'AQAAAAIAAYagAAAAEHzpJ4rfTf4UvPnqo6XV+V+c2IzsfV3djGgTNOqSWaafzmAFdISh0SVzpn+9TIX2pw==', 'BOT/IT', 0);
+INSERT INTO "Users" VALUES ('twitter@twitter.com', 'Twitter', 'Formerly Known', 'As X', 'AQAAAAIAAYagAAAAEHzpJ4rfTf4UvPnqo6XV+V+c2IzsfV3djGgTNOqSWaafzmAFdISh0SVzpn+9TIX2pw==', 'He/Him', 1);
+INSERT INTO "Users" VALUES ('contact@avh.com', 'Béla', 'K.', 'Kun', 'AQAAAAIAAYagAAAAEHzpJ4rfTf4UvPnqo6XV+V+c2IzsfV3djGgTNOqSWaafzmAFdISh0SVzpn+9TIX2pw==', 'AV/H', 1);
 
 -- Posts tábla feltöltése
 
