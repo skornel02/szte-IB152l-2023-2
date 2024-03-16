@@ -29,15 +29,15 @@ CREATE TABLE "Emails" (
     "SentAt" TIMESTAMP(7),
     "RecipientUserEmailAddress" NVARCHAR2(255) NOT NULL,
     CONSTRAINT "PK_Emails" PRIMARY KEY ("Id"),
-    CONSTRAINT "FK_Emails_Users_RecipientUserEmailAddress" FOREIGN KEY ("RecipientUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_Emails_Users_RecipientUserEmailAddress" FOREIGN KEY ("RecipientUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE "Followings" (
     "FollowerUserEmailAddress" NVARCHAR2(255) NOT NULL,
     "FollowedUserEmailAddress" NVARCHAR2(255) NOT NULL,
     CONSTRAINT "PK_Followings" PRIMARY KEY ("FollowedUserEmailAddress", "FollowerUserEmailAddress"),
-    CONSTRAINT "FK_Followings_Users_FollowedUserEmailAddress" FOREIGN KEY ("FollowedUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE,
-    CONSTRAINT "FK_Followings_Users_FollowerUserEmailAddress" FOREIGN KEY ("FollowerUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_Followings_Users_FollowedUserEmailAddress" FOREIGN KEY ("FollowedUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE,
+    CONSTRAINT "FK_Followings_Users_FollowerUserEmailAddress" FOREIGN KEY ("FollowerUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE "Poetries" (
@@ -46,7 +46,7 @@ CREATE TABLE "Poetries" (
     "CreationDate" TIMESTAMP(7) NOT NULL,
     "CreatorUserEmailAddress" NVARCHAR2(255) NOT NULL,
     CONSTRAINT "PK_Poetries" PRIMARY KEY ("Id"),
-    CONSTRAINT "FK_Poetries_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_Poetries_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE "Posts" (
@@ -56,7 +56,7 @@ CREATE TABLE "Posts" (
     "Location" NVARCHAR2(100),
     "CreatorUserEmailAddress" NVARCHAR2(255) NOT NULL,
     CONSTRAINT "PK_Posts" PRIMARY KEY ("Id"),
-    CONSTRAINT "FK_Posts_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_Posts_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE "WatchList" (
@@ -66,8 +66,8 @@ CREATE TABLE "WatchList" (
     "StalkedEmailAddress" NVARCHAR2(255) NOT NULL,
     "StalkerEmailAddress" NVARCHAR2(255) NOT NULL,
     CONSTRAINT "PK_WatchList" PRIMARY KEY ("Id"),
-    CONSTRAINT "FK_WatchList_Users_StalkedEmailAddress" FOREIGN KEY ("StalkedEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE,
-    CONSTRAINT "FK_WatchList_Users_StalkerEmailAddress" FOREIGN KEY ("StalkerEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_WatchList_Users_StalkedEmailAddress" FOREIGN KEY ("StalkedEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE,
+    CONSTRAINT "FK_WatchList_Users_StalkerEmailAddress" FOREIGN KEY ("StalkerEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE "Comments" (
@@ -78,9 +78,9 @@ CREATE TABLE "Comments" (
     "CommentedOnPostId" NUMBER(10),
     "CommentedOnPoetryId" NUMBER(10),
     CONSTRAINT "PK_Comments" PRIMARY KEY ("Id"),
-    CONSTRAINT "FK_Comments_Poetries_CommentedOnPoetryId" FOREIGN KEY ("CommentedOnPoetryId") REFERENCES "Poetries" ("Id") ON DELETE CASCADE,
-    CONSTRAINT "FK_Comments_Posts_CommentedOnPoetryId" FOREIGN KEY ("CommentedOnPoetryId") REFERENCES "Posts" ("Id") ON DELETE CASCADE,
-    CONSTRAINT "FK_Comments_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_Comments_Poetries_CommentedOnPoetryId" FOREIGN KEY ("CommentedOnPoetryId") REFERENCES "Poetries" ("Id") ON UPDATE RESTRICT ON DELETE CASCADE,
+    CONSTRAINT "FK_Comments_Posts_CommentedOnPoetryId" FOREIGN KEY ("CommentedOnPoetryId") REFERENCES "Posts" ("Id") ON UPDATE RESTRICT ON DELETE CASCADE,
+    CONSTRAINT "FK_Comments_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 CREATE TABLE "Engagements" (
@@ -90,9 +90,9 @@ CREATE TABLE "Engagements" (
     "EngagedWithPostId" NUMBER(10),
     "EngagedWithPoetryId" NUMBER(10),
     CONSTRAINT "PK_Engagements" PRIMARY KEY ("Id"),
-    CONSTRAINT "FK_Engagements_Poetries_EngagedWithPoetryId" FOREIGN KEY ("EngagedWithPoetryId") REFERENCES "Poetries" ("Id") ON DELETE CASCADE,
-    CONSTRAINT "FK_Engagements_Posts_EngagedWithPostId" FOREIGN KEY ("EngagedWithPostId") REFERENCES "Posts" ("Id") ON DELETE CASCADE,
-    CONSTRAINT "FK_Engagements_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON DELETE CASCADE
+    CONSTRAINT "FK_Engagements_Poetries_EngagedWithPoetryId" FOREIGN KEY ("EngagedWithPoetryId") REFERENCES "Poetries" ("Id") ON UPDATE RESTRICT ON DELETE CASCADE,
+    CONSTRAINT "FK_Engagements_Posts_EngagedWithPostId" FOREIGN KEY ("EngagedWithPostId") REFERENCES "Posts" ("Id") ON UPDATE RESTRICT ON DELETE CASCADE,
+    CONSTRAINT "FK_Engagements_Users_CreatorUserEmailAddress" FOREIGN KEY ("CreatorUserEmailAddress") REFERENCES "Users" ("EmailAddress") ON UPDATE RESTRICT ON DELETE CASCADE
 );
 
 -- Create indexes
