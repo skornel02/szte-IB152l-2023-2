@@ -1,3 +1,4 @@
+using Backend.Endpoints;
 using Backend.Persistance;
 using Backend.Persistance.Entities;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -41,6 +42,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapAuthEndpoints();
 
 using (var scope = app.Services.CreateScope())
 {

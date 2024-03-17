@@ -33,4 +33,6 @@ public class UserEntity
     public List<EngagementEntity> Engagements { get; set; } = default!;
 
     public List<EmailQueueEntity> Emails { get; set; } = default!;
+
+    public string Name => $"{FirstName}{(!string.IsNullOrEmpty(MiddleName) ? $" {MiddleName} " : "")}{LastName}";
 }
