@@ -1,12 +1,3 @@
--- Create SQL Technical user
-
-CREATE USER "ALKO" IDENTIFIED BY "s$cretPassw0rd"
-    DEFAULT TABLESPACE "USERS";
-
-GRANT ALL PRIVILEGES TO "ALKO";
-
-GRANT UNLIMITED TABLESPACE TO "ALKO";
-
 -- Create base tables for ALKO
 
 CREATE TABLE "Users" (
